@@ -1,0 +1,264 @@
+/*
+* @Author: Lenovo
+* @Date:   2018-08-29 11:33:29
+* @Last Modified by:   Lenovo
+* @Last Modified time: 2018-09-10 18:56:33
+*/
+/*顶部导航开始*/
+
+nav{
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background: #fff;
+	box-shadow: 0 0 5px 2px rgba(0,0,0,0.1);
+}
+nav .con{
+	height: 60px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+nav .con .pic{
+	height: 50px;
+	width: 168px;
+	margin-top: 5px;
+}
+nav .con .list{
+	height: 60px;
+/* 	width: 524px; */
+	display: none;
+}
+nav .con .list ul li{
+	float: left;
+	height: 60px;
+	width: 56px;
+	margin-right: 15px;
+	text-align: center;
+	line-height: 60px;
+	color: #000;
+}
+nav .con .list ul li:nth-child(7){
+	margin-right: 0;
+}
+nav .con .list a{
+	color: #8f8f8f;
+	text-decoration: none;
+}
+nav .con .list ul .change{
+	height: 60px;
+	width: 71px;
+	border-top: 1px solid #000;
+}
+nav .con .list ul .flag{
+	color: #000;
+}
+nav .con .list ul .list-item1{
+	border-top:2px solid #fff;
+}
+nav .con .list ul .item{
+	height: 60px;
+	/* width: 70px; */
+	color: #8f8f8f;
+	border-top:2px solid #fff;
+}
+nav .con .list ul span{
+	color: #8f8f8f;
+}
+nav .con .list ul li:hover a,span{
+	color: #000;
+}
+nav .con .list ul li:hover{
+	border-top:2px solid #000;
+}
+
+nav .button{
+	height: 66px;
+	width: 43px;
+}
+nav .button .line{
+	height: 20px;
+	width: 31px;
+	margin:0 auto;
+	margin-top: 23px;
+	background-image: url(../img/nav2.png);
+	background-size: cover;
+	background-position: center;
+}
+
+/*顶部导航结束*/
+
+/* banner开始 */
+.banner{
+	margin-top: 60px;
+}
+.banner .container .con{
+	height: 100%;
+	width: 100%;
+}
+.banner .con img{
+	width: 100%;
+}
+
+
+/* banner结束 */
+
+/* 内容开始 */
+main{
+	background: #f5f5f5;
+}
+main .container .con{
+	height:100%;
+	width: 100%; 
+}
+main .con .content{
+	padding: 30px;
+	background: #fff;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+main .con .content .inner{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #f5f5f5;
+}
+main .con .content .inner .left img{
+	height: 62px;
+	width: 100px;
+	padding-right: 10px;
+}
+main .con .content .right h4{
+	margin: 0;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+main .con .content .right p{
+	margin-bottom: 15px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #999;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.8;
+
+}
+main .con .content .right span{
+	font-size: 16px;
+	color: #999;
+	font-weight: 300;
+}
+main .con .content .right span i img{
+	height: 20px;
+	width: 20px;
+	margin-right: 5px;
+	margin-left: 15px;
+}
+main .con .content .pager{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0;
+	/* display: none; */
+}
+main .con .content .pager .one{
+	height: 42px;
+	width: 74px;
+	border: 1px solid #fff;
+	color: #999;
+	font-size: 14px;
+	text-align: center;
+	line-height: 39px;
+}
+main .con .content .pager .two{
+	width: 39px;
+	height: 42px;
+	color: #fff;
+	background: #000;
+	text-align: center;
+	line-height: 42px;
+	font-size: 22px;
+	border: 1px solid #fff;
+}
+
+
+
+
+/* 底部开始 */
+
+footer .bottom{
+	height: 114px;
+	width: 100%;
+	background: #f5f5f5;
+}
+footer .bottom .container .con{
+	height: 100%;
+	width: 100%;
+}
+footer .bottom .con .title{
+	height: 74px;
+	width: 100%;
+	margin-top:15px;
+	margin-bottom: 15px;
+}
+footer .bottom .con .title p{
+	text-align: center;
+	color: #000;
+	font-size: 14px;
+	margin-bottom: 0;
+	margin-top: 5px;
+}
+footer .bottom .con .title .word{
+	color: #aaa;
+} 
+/* 底部结束 */
+
+
+/* 内容结束 */
+
+@media screen and (min-width: 768px){
+	nav .con .list{
+		display: inline;
+	}
+	nav .button{
+		display: none;
+	}
+	main .con{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	main .con .content{	
+		margin-left:0;
+		margin-right: 0;
+	}
+	main .con .content .inner .left img{
+		height: 100px;
+		width: 160px;
+		margin-right: 15px;
+	}
+	main .con .content .right p{
+		overflow: hidden;
+    	text-overflow: ellipsis;
+    	display: -webkit-box;
+    	-webkit-line-clamp: 4;
+    	-webkit-box-orient: vertical;
+	}
+	main .con .content .right h4{
+		font-size: 22px;
+		margin-bottom: 25px;
+	}
+	main .con .content .pager{
+		/* display: inline; */
+	}
+}
+@media screen and (min-width: 992px){
+	
+}
+@media screen and (min-width: 1200px){
+
+}
